@@ -1,0 +1,21 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <ul>
+        {% for names in name_list %}
+        <li>{{names}}</li>
+        {% endfor %}
+    </ul>
+
+    {% if 'deep' in name_list %}
+    <p>Hii Deep!</p>
+    {% else %}
+    <p>Hello </p>
+    {% endif %}
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block content %}
+{% if results %}
+<p>All conditions are satisfied</p>
+{% else %}
+<ul>
+{% if not lower %}
+<li><p>Lower is not satisfied.</p></li>
+{% endif %}
+{% if not upper %}
+<li><p>Upper is not satisfied.</p></li>
+{% endif %}
+{% if not digit %}
+<li><p>Digit is not satisfied.</p></li>
+{% endif %}
+</ul>
+
+{% endif %}
+
+{% endblock %}

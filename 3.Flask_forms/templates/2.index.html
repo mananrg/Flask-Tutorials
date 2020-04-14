@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form method="post">
+        {{form.hidden_tag()}}
+        {{form.breed.label}} {{form.breed() }}
+        <br>
+        {{form.mood.label}} {{form.mood()}}
+        <br>
+        {{form.food_choices.label}} {{form.food_choices()}}
+        <br>
+        Any other feedback?
+        <br>
+        {{form.feedback()}}
+        <br>
+        {{form.submit()}}
+
+    </form>
+
+</body>
+
+</html>
